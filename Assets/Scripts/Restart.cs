@@ -11,6 +11,7 @@ public class Restart : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.R)) {
             Debug.Log("Restart.");
 			FloorMaker.grandTotal = 0;
+            FloorMaker.makerList.Clear();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }	
     }
